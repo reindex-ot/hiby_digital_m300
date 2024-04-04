@@ -1,4 +1,6 @@
-# Android device tree for HIBYDIGITAL M300 (M300)
+# Android device tree for HiBy Digital M300
+HiBy Digital Android DAP.
+
 
 ```
 #
