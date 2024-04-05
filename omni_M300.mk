@@ -8,7 +8,6 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/embedded.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
@@ -23,6 +22,8 @@ PRODUCT_MODEL := M300
 PRODUCT_MANUFACTURER := hiby
 
 PRODUCT_GMS_CLIENTID_BASE := android-hiby
+
+PRODUCT_COPY_FILES += device/hiby/M300/prebuilt/zImage:kernel
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="M300-user 11 RKQ1.211119.001 HiBy01261848 dev-keys"
